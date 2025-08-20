@@ -13,8 +13,8 @@ const entities = createReducer([], builder => {
       state.filter(contact => contact.id !== payload.id),
     )
     .addCase(addOneContact.fulfilled, (state, { payload }) => [
-      ...state,
       payload,
+      ...state,
     ])
     .addCase(editOneContact.fulfilled, (state, { payload }) =>
       state.map(contact => (contact.id === payload.id ? payload : contact)),
