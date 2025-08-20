@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70rem;
+  height: 35rem;
+  background-image: var(--background-gradient);
+  border-radius: 40px;
+  box-shadow: 0px 0px 40px rgb(92, 92, 92);
+}
+
+.title {
+  font-size: 50px;
+  color: var(--default-white);
+  text-shadow: var(--shadow-elements);
+  margin: 0;
+}
+
+.input {
+  font-size: 30px;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  outline: none;
+  background-image: var(--background-gradient-input);
+  color: var(--default-white);
+  width: 100%;
+  box-shadow: var(--shadow-elements);
+  transition: transform 0.3s ease;
+}
+
+.input:focus {
+  transform: scale(1.05);
+  box-shadow: inset 0px 0px 10px rgb(70, 70, 70);
+}
+
+.input.error {
+  animation: outlineAnimate 1s ease infinite alternate;
+}
+
+@keyframes outlineAnimate {
+  0% {
+    outline: 2px solid var(--light-error-color);
+  }
+  100% {
+    outline: 2px solid var(--dark-error-color);
+  }
+}
+
+.btn {
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background: var(--button-gray-background);
+  color: var(--default-white);
+  border-radius: 20px;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: var(--button-gray-hover);
+}
+
+.btn:active {
+  transform: scale(0.9);
+  background: var(--default-white);
+}
+
+.email_error,
+.password_error {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  top: 105%;
+  color: var(--dark-error-color);
+}
+
+.label {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.title_container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.link {
+  color: var(--default-white);
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.link:hover {
+  transform: scale(1.05);
+}
+
+.pass_show {
+  position: absolute;
+  top: 30%;
+  right: -50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.pass_show:hover {
+  transform: scale(1.1);
+}

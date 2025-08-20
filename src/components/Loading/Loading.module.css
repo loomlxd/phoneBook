@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.first_dote,
+.second_dote,
+.third_dote {
+  width: 30px;
+  height: 30px;
+  background-color: var(--background-gray);
+  border-radius: 50%;
+}
+
+.animation {
+  animation: doteAnimation 1s ease infinite;
+}
+
+@keyframes doteAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

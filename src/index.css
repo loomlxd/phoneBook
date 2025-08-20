@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+  --background: rgb(226, 226, 226);
+  --shadow-elements: 0px 0px 30px rgb(138, 138, 138, 0.8);
+  --background-gradient-input: linear-gradient(135deg, #b3b3b3, #6b6b6b);
+  --background-gradient: linear-gradient(135deg, #707070, #a7a7a7);
+  --light-error-color: rgb(255, 197, 197);
+  --dark-error-color: rgb(255, 137, 137);
+  --button-gray-background: rgb(190, 190, 190);
+  --button-gray-hover: rgb(122, 122, 122);
+  --default-white: white;
+  --default-black: black;
+  --background-gray: rgb(180, 180, 180);
+  --background-light-gray: rgb(211, 211, 211);
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--background);
+  font-family: 'Sansation', sans-serif;
+}
